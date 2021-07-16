@@ -45,7 +45,7 @@ function addContato() {
 
 function listar(){
 	var listaContatos = document.getElementById('listar');
-    listaContatos.innerHTML = [];
+        listaContatos.innerHTML = [];
 
 	for(contato of contatos){
 		var idContato = contatos.indexOf(contato);
@@ -56,10 +56,10 @@ function listar(){
 		var emailContato = document.createElement('p');
 		emailContato.appendChild(document.createTextNode('Email: ' + contato.email));
 
-        var whatsAppContato = document.createElement('p');
+                var whatsAppContato = document.createElement('p');
 		whatsAppContato.appendChild(document.createTextNode('WhatsApp: ' + contato.whatsApp));
 
-        var instagramContato = document.createElement('p');
+                var instagramContato = document.createElement('p');
 		instagramContato.appendChild(document.createTextNode('Instagram: ' + contato.instagram));
 
 		var editar = document.createElement('a');
@@ -76,9 +76,9 @@ function listar(){
 
 		var itens = document.createElement('li');
 		itens.appendChild(nomeContato);
-        itens.appendChild(emailContato);
+                itens.appendChild(emailContato);
 		itens.appendChild(whatsAppContato);
-        itens.appendChild(instagramContato);
+                itens.appendChild(instagramContato);
 		itens.appendChild(editar);
 		itens.appendChild(excluir);
 
